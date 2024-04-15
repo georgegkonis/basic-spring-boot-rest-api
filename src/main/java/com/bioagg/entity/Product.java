@@ -7,15 +7,16 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "product")
+@Table(name = "products")
 public class Product {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
-    private Long categoryId;
+    private Category category;
 
     @Column(name = "name", nullable = false)
     private String name;
