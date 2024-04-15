@@ -9,5 +9,4 @@ public class BioAggApplication {
     public static void main(String[] args) {
         SpringApplication.run(BioAggApplication.class, args);
     }
-
 }
