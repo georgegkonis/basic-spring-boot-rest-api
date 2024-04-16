@@ -1,0 +1,2 @@
+@host = http://localhost:8080
+@base = /api/v1/categories
