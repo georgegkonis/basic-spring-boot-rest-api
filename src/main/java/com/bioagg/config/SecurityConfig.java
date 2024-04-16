@@ -1,4 +1,4 @@
-package com.bioagg.conifig;
+package com.bioagg.config;
 
 import com.bioagg.filter.JwtRequestFilter;
 import com.bioagg.service.UserService;
