@@ -3,7 +3,7 @@ package com.bioagg.service;
 import com.bioagg.dto.CategoryDto;
 import com.bioagg.entity.Category;
 import com.bioagg.repository.CategoryRepository;
-import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@NoArgsConstructor
+@AllArgsConstructor
 public class CategoryService {
 
     private CategoryRepository categoryRepository;
