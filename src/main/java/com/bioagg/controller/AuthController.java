@@ -25,13 +25,13 @@ public class AuthController {
     public ResponseEntity<LoginResponse> login(
             @RequestBody LoginRequest loginRequest
     ) {
-        var authToken = new UsernamePasswordAuthenticationToken(loginRequest.username(), loginRequest.password());
-        var authentication = authManager.authenticate(authToken);
+        final var authToken = new UsernamePasswordAuthenticationToken(loginRequest.username(), loginRequest.password());
+        final var authentication = authManager.authenticate(authToken);
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        var jwt = jwtUtil.GenerateToken(loginRequest.username());
-        var response = new LoginResponse(jwt);
+        final var jwt = jwtUtil.GenerateToken(loginRequest.username());
+        final var response = new LoginResponse(jwt);
 
         return ResponseEntity.ok(response);
     }
