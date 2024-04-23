@@ -6,7 +6,7 @@ Content-Type: application/json
 
 {
   "username": "user",
-  "password": "pass"
+  "password": "1"
 }
 
 ### Logout
